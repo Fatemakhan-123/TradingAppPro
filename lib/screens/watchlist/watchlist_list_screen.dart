@@ -125,13 +125,13 @@ class WatchlistListScreen extends StatelessWidget {
                     onPressed: () => Navigator.pop(ctx),
                     child: const Text(
                       'Cancel',
-                      style: TextStyle(color: AppColors.textDarkSecondary),
+                      style: TextStyle(color: Colors.red),
                     ),
                   ),
                   const SizedBox(width: 12),
                   FilledButton(
                     onPressed: () => Navigator.pop(ctx, controller.text),
-                    child: const Text('Save'),
+                    child: const Text('Save',style: TextStyle(color: Colors.white)),
                   ),
                 ],
               ),
@@ -169,7 +169,7 @@ class WatchlistListScreen extends StatelessWidget {
               ),
               const SizedBox(height: 12),
               Text(
-                '"$name" and its stocks will be permanently removed.',
+                '${name} and its stocks will be permanently removed.',
                 style: const TextStyle(
                   color: AppColors.textDarkSecondary,
                   fontSize: 14,
@@ -183,16 +183,16 @@ class WatchlistListScreen extends StatelessWidget {
                     onPressed: () => Navigator.pop(ctx, false),
                     child: const Text(
                       'Cancel',
-                      style: TextStyle(color: AppColors.textDarkSecondary),
+                      style: TextStyle(color: Colors.red),
                     ),
                   ),
                   const SizedBox(width: 12),
                   FilledButton(
                     style: FilledButton.styleFrom(
-                      backgroundColor: AppColors.errorColor,
+                      backgroundColor: AppColors.primaryColor,
                     ),
                     onPressed: () => Navigator.pop(ctx, true),
-                    child: const Text('Delete'),
+                    child: const Text('Delete',style: TextStyle(color: Colors.white)),
                   ),
                 ],
               ),
@@ -346,7 +346,7 @@ class WatchlistListScreen extends StatelessWidget {
                                   children: [
                                     Icon(Icons.edit, size: 18),
                                     SizedBox(width: 8),
-                                    Text('Rename'),
+                                    Text('Rename',style: TextStyle(color: Colors.white)),
                                   ],
                                 ),
                               ),
@@ -354,9 +354,9 @@ class WatchlistListScreen extends StatelessWidget {
                                 value: 'delete',
                                 child: Row(
                                   children: [
-                                    Icon(Icons.delete, size: 18, color: AppColors.errorColor),
+                                    Icon(Icons.delete, size: 18, color:Colors.white),
                                     SizedBox(width: 8),
-                                    Text('Delete', style: TextStyle(color: AppColors.errorColor)),
+                                    Text('Delete', style: TextStyle(color: Colors.white)),
                                   ],
                                 ),
                               ),
