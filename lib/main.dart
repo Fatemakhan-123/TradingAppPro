@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:task_trading_app/app/splash_screen.dart';
 
 import 'app/main_shell.dart';
 import 'core/app_colors/app_colors.dart';
@@ -145,7 +146,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
         themeMode: ThemeMode.dark,
-        home: const MainShell(),
+        home: const SplashScreen(),
       ),
     );
   }

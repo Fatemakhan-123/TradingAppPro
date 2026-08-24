@@ -8,7 +8,6 @@ class AppColors {
   static final Color blackColor = Colors.black;
   static final Color whiteColor = Colors.white;
 
-  // Add this line for transparent
   static const Color transparent = Colors.transparent;
 
   // Secondary Colors
